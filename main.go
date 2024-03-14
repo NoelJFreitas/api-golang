@@ -3,12 +3,15 @@ package main
 import (
 	"log"
 
+	"github.com/NoelJFreitas/api-golang/src/configuration/logger"
 	"github.com/NoelJFreitas/api-golang/src/controller/routes"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
 func main() {
+
+	logger.Info("Start project")
 
 	// loading .env file
 	err := godotenv.Load()
